@@ -1,9 +1,12 @@
-import { Kahun } from "./components/Kahun";
+//import { Kahun } from "./components/Kahun";
+import { Kasoku } from "./components/Kasoku.";
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
-        <Kahun></Kahun>
+        <Kasoku></Kasoku>
+        {/* <Kahun></Kahun> */}
       </header>
     </div>
   );
