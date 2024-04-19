@@ -1,13 +1,36 @@
 //import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import { BookButton } from "./BookButton.jsx";
+
+import { Transport } from './Transport.jsx';
+import { Button } from './Button.jsx';
+
+
 
 function App() {
+  const [showMore, setShowMore] = useState(true);
+    function handleClick(){
+        setShowMore(!showMore);
+    }
+
+    const sculpture = Transport;
+  
+
   return (
-    <div className="App">
-        <button className='button' href="#">
+    <div>
+        
+      
+    <BookButton>
+        <button onClick = {handleClick} className='button' href="#">
             図鑑
         </button>
-    </div>
+    </BookButton>
+        {showMore ? <Button /> : <p>{sculpture.url}</p>}
+    
+    
+    </div>>
+  
   );
 }
 
