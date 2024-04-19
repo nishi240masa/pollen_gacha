@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Kahun } from "./components/Kahun";
 function App() {
   return (
     <div className="App">
-      <h1>test</h1>
+      <header className="App-header">
+        <Kahun></Kahun>
+      </header>
     </div>
   );
 }
-
 export default App;
