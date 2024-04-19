@@ -8,7 +8,7 @@ import { Button } from './Button.jsx';
 
 
 
-function App() {
+export const  App = () =>{
   const [showMore, setShowMore] = useState(true);
     function handleClick(){
         setShowMore(!showMore);
@@ -32,6 +32,5 @@ function App() {
     </div>>
   
   );
-}
+};
 
-export default App;
