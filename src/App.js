@@ -29,8 +29,7 @@ export const  App = () =>{
         {showMore ? <Button /> : <p>{sculpture.url}</p>}
     
     
-    </div>>
-  
+    </div>
   );
 };
 
